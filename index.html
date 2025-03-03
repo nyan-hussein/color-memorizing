@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <audio id="level-up" src="level-up-191997.mp3" preload="auto"></audio>
+      <audio id="game-over" src="080205_life-lost-game-over-89697.mp3"></audio>
+      <h1>Memory Game</h1>
+      <div class="game-container">
+        <div id="score">Score: 0</div>
+        <div class="color-buttons">
+          <div class="color-button" id="red"></div>
+          <div class="color-button" id="blue"></div>
+          <div class="color-button" id="green"></div>
+          <div class="color-button" id="yellow"></div>
+          <div class="color-button" id="orange"></div>
+          <div class="color-button" id="purple"></div>
+          <div class="color-button" id="pink"></div>
+          <div class="color-button" id="brown"></div>
+          <div class="color-button" id="gray"></div>
+          <div class="color-button" id="black"></div>
+          <div class="color-button" id="white"></div>
+          <div class="color-button" id="skyblue"></div>
+        </div>
+      </div>
+      <button class="button-55" id="start">Start Game</button>
+    </div>
+    <div id="message">
+      <div class="popup-icon">🧠</div>
+      <h2 style="font-size: 20px">Memory Limit Reached!</h2>
+      <p class="popup-message">
+        Your brain maxed out at <span id="score-number"></span>th sequence.
+        <span style="color: red">Try agian!</span>
+      </p>
+      <div class="score">Your Score: <span id="score-value"></span></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
