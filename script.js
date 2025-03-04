@@ -42,12 +42,14 @@ function checkPlyerN() {
   if (over) {
     gameOver();
   } else if (playerSequence.length === sequence.length) {
-    document.getElementById("level-up").play();
-    disabledBtn();
-    setTimeout(() => {
-      document.getElementById("score").textContent = "Score: " + level;
-    }, 200);
-    setTimeout(nextLevel, 500);
+ setTimeout(() => {
+      document.getElementById("level-up").play();
+      disabledBtn();
+      setTimeout(() => {
+        document.getElementById("score").textContent = "Score: " + level;
+      }, 200);
+      setTimeout(nextLevel, 500);
+    }, 500);
   }
 }
 
