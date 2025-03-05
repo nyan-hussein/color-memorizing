@@ -48,7 +48,10 @@ function checkPlyerN() {
       setTimeout(() => {
         document.getElementById("score").textContent = "Score: " + level;
       }, 200);
-      setTimeout(nextLevel, 500);
+      setTimeout(()=>{
+        nextLevel();
+         document.activeElement.blur();
+      }, 500);
     }, 500);
   }
 }
