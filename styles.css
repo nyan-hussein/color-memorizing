@@ -235,6 +235,11 @@ h1 {
     "Lucida Sans", Arial, sans-serif;
   font-weight: 700;
 }
+.color-button:active {
+  transform: none !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+}
 @media (max-width: 550px) {
   .color-buttons {
     grid-template-columns: repeat(3, 100px);
