@@ -50,7 +50,10 @@ function checkPlyerN() {
       }, 200);
       setTimeout(()=>{
         nextLevel();
-         document.activeElement.blur();
+        document.querySelectorAll(".color-button").forEach((btn) => {
+        btn.classList.remove("active");
+        btn.blur();
+    });
       }, 500);
     }, 500);
   }
