@@ -42,19 +42,19 @@ function checkPlyerN() {
   if (over) {
     gameOver();
   } else if (playerSequence.length === sequence.length) {
- setTimeout(() => {
+    setTimeout(() => {
       document.getElementById("level-up").play();
       disabledBtn();
       setTimeout(() => {
         document.getElementById("score").textContent = "Score: " + level;
       }, 200);
-      setTimeout(()=>{
+      setTimeout(() => {
         nextLevel();
-        document.querySelectorAll(".color-button").forEach((btn) => {
-        btn.classList.remove("active");
-        btn.blur();
-    });
+        document.activeElement.blur();
       }, 500);
+      colors[playerSequence.length].style.opacity = "0.9";
+      colors[playerSequence.length].style.boxShadow =
+        " inset 0px -3px 4px rgba(0, 0, 0, 0.358)";
     }, 500);
   }
 }
