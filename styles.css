@@ -67,15 +67,9 @@ h1 {
   pointer-events: none;
 }
 
-.color-button:hover {
+.color-button:active {
   opacity: 1;
   box-shadow: inset 2px 2px 12px rgb(0, 0, 0);
-}
-
-.color-button:hover::before {
-  opacity: 0.5;
-  box-shadow: inset 2px 2px 12px rgb(87, 87, 87);
-  transition: box-shadow 3s ease-in-out;
 }
 #red {
   background-color: rgba(255, 0, 0, 0.6);
