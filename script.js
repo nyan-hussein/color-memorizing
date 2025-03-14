@@ -50,11 +50,7 @@ function checkPlyerN() {
       }, 200);
       setTimeout(() => {
         nextLevel();
-        document.activeElement.blur();
       }, 500);
-      colors[playerSequence.length].style.opacity = "0.9";
-      colors[playerSequence.length].style.boxShadow =
-        " inset 0px -3px 4px rgba(0, 0, 0, 0.358)";
     }, 500);
   }
 }
